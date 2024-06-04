@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.breakrithm'
+version = '1.0'
+
+java {
+    sourceCompatibility = '17'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+}
