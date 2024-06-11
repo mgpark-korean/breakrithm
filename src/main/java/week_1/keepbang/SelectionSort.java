@@ -15,27 +15,32 @@ public class SelectionSort {
         .mapToInt(Integer::valueOf)
         .toArray();
 
-    selectionSort(n, arr);
-
-    Arrays.stream(arr).forEach(i -> System.out.print(i + " "));
+    Arrays.stream(selectionSort(n, arr))
+        .forEach(i -> System.out.print(i + " "));
   }
 
-  public static void selectionSort(int n, int[] arr) {
+  public static int[] selectionSort(int n, int[] arr) {
+    // 배열 복사
+    int[] arrCopy = new int[n];
+    System.arraycopy(arr, 0, arrCopy, 0, n);
+
     for (int i = 0; i < n; i++) {
-      int min = arr[i]; // 최소값
+      int min = arrCopy[i]; // 최소값
       int minIndex = i; // 최소값의 인덱스
       // 최소값을 찾는 반복문
       for (int j = i + 1; j < n; j++) {
-        if (min > arr[j]) {
+        if (min > arrCopy[j]) {
           // 이전 최소값보다 작을 경우 최소값 변경
-          min = arr[j];
+          min = arrCopy[j];
           minIndex = j;
         }
       }
       // 최소값과 i 인덱스 값의 위치 변경
-      arr[minIndex] = arr[i];
-      arr[i] = min;
+      arrCopy[minIndex] = arrCopy[i];
+      arrCopy[i] = min;
     }
+
+    return arrCopy;
   }
 
 }
