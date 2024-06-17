@@ -6,7 +6,7 @@ public class SelectionSort {
 
     public void solution() {
         int [] numbers = readNumbers();
-        bubbleSort(numbers);
+        selectionSort(numbers);
     }
 
     public int[] readNumbers () {
@@ -34,7 +34,7 @@ public class SelectionSort {
         return numbers;
     }
 
-    public void bubbleSort(int [] numbers) {
+    public void selectionSort(int [] numbers) {
         int size = numbers.length;
 
         for (int i=0; i<size-1; i++) {
