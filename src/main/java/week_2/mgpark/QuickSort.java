@@ -7,10 +7,10 @@ import week_2.mgpark.util.ListUtils;
 public class QuickSort {
 
   public static void main(String[] args) {
-//    execute(new String[]{
-//        "6",
-//        "5 2 6 1 3 8"
-//    });
+    execute(new String[]{
+        "6",
+        "5 2 6 1 3 8"
+    });
     execute(new String[]{
         "6",
         "19 24 23 16 1 2"
