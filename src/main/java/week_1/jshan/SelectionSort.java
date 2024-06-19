@@ -5,6 +5,11 @@ public class SelectionSort {
   public static void main(String[] args) {
 
     int[] nArr = {9,10,2,4,5,1};
+//                  1 10 2 4 5 9
+//                  1 2 10 4 5 9
+//                  1 2 4 10 5 9
+//                  1 2 4 5 10 9
+//                  1 2 4 5 9 10
     sortBySelection(nArr);
     for (int i=0; i<nArr.length; i++) {
       System.out.print(nArr[i] + " ");
