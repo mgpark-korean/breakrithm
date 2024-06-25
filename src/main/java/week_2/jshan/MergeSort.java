@@ -33,6 +33,9 @@ public class MergeSort {
     int k = low;
 
 
+    System.out.print("오리진 Arr : ");
+    Arrays.stream(arr).forEach(n -> System.out.print(n + " "));
+    System.out.println();
     // 시작점은 중간점까지 가는 것, 중간점은 종단점 까지 가는 것
     // 비교해서 교환 하는 것
     while (i <= mid && j <= high) {
@@ -45,6 +48,7 @@ public class MergeSort {
         j++;
       }
       k++;
+
       System.out.print("값 비교 및 치환 : ");
       Arrays.stream(mergedArr).forEach(n -> System.out.print(n + " "));
       System.out.println();
@@ -64,6 +68,9 @@ public class MergeSort {
       j++;
       k++;
     }
+    System.out.print("오리진 Arr : ");
+    Arrays.stream(arr).forEach(n -> System.out.print(n + " "));
+    System.out.println();
     System.out.print("값 채우기 : ");
     Arrays.stream(mergedArr).forEach(n -> System.out.print(n + " "));
     System.out.println();
