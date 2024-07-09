@@ -1,6 +1,5 @@
 package week_2.jhsong;
 
-import java.util.ArrayList;
 
 public class MergeSort {
     public static final int MAX_DIGIT = 10;

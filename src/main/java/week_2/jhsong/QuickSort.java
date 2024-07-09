@@ -1,6 +1,5 @@
 package week_2.jhsong;
 
-import java.util.ArrayList;
 
 public class QuickSort {
     public void solution() {
