@@ -13,7 +13,7 @@ public class DynamicArray {
 
       switch (commandArg.keyword) {
         case PUSH_BACK -> results.add(commandArg.number);
-        case POP_BACK -> results.remove(commandArg.number);
+        case POP_BACK -> results.removeLast();
         case SIZE -> System.out.println(results.size());
         case GET -> System.out.println(results.get(commandArg.number - 1));
       }
