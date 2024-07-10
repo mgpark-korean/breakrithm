@@ -1,4 +1,4 @@
-package week5.jshan;
+package week_5.jshan;
 
 import java.util.Stack;
 
