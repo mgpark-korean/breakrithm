@@ -33,7 +33,7 @@ public class Stack {
 
         System.out.println(brackets);
         for (int i=0; i<brackets.length(); i++) {
-            System.out.printf("%d 번째 값: '%s', 스택: ", i+1, brackets.charAt(i));
+            System.out.printf("%d 번째 값: %s, 스택: [", i+1, brackets.charAt(i));
             if (brackets.charAt(i) == '(') {
                 // (1)
                 stack.push('(');
@@ -41,7 +41,7 @@ public class Stack {
 
             } else {
                 if (stack.isEmpty()) {
-                    System.out.printf("'%s'\n",brackets.charAt(i));
+                    System.out.printf("%s\n",brackets.charAt(i));
 
                     return false;
                 }
@@ -50,7 +50,8 @@ public class Stack {
                 stack.pop();
             }
 
-            stack.forEach(v -> System.out.printf("%s ", v));
+            stack.forEach(v -> System.out.printf("%s, ", v));
+            System.out.print("]");
             System.out.println();
         }
 
