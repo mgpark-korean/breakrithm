@@ -2,7 +2,6 @@ package week_5.mgpark.stack;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Stack;
 
 public class BracketStack {
 

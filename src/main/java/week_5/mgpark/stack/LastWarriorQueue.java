@@ -24,7 +24,7 @@ public class LastWarriorQueue {
 
     System.out.println("척살 대상 시작");
     int killCursor = 1;
-    while (!queue.isEmpty() && queue.size() >= killPosition) {
+    while (!queue.isEmpty() && queue.size() > 1) {
       int target = queue.pop();
       if(killCursor == killPosition) {
         System.out.println(target + "번 전사 사망.");
